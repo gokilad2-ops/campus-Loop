@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const d=load(),a=d.requests.filter(x=>x.requesterId===currentUser().id);document.getElementById('myRequests').innerHTML=a.length?a.map(requestCard).join(''):`<div class="empty"><b>No requests yet.</b>Post something you need from the campus community.</div>`})

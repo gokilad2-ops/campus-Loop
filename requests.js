@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const d=load();document.getElementById('requestGrid').innerHTML=d.requests.slice().reverse().map(requestCard).join('')})

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Campus Thrift | CAMPUS+</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="toast"></div>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">C+</span><span>Campus <b>Thrift</b></span></a>
+  <nav>
+    <a href="listings.html">Browse</a>
+    <a href="requests.html">Requests</a>
+    <a href="my-listings.html">My Listings</a>
+    <a href="my-requests.html">My Requests</a>
+  </nav>
+  <div class="user-area">
+    <span id="userName">Gokila CSE</span>
+    <select id="userSelect" title="Demo user"></select>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">CAMPUS+ • STUDENT MARKETPLACE</span>
+    <h1>Give things a <span>second life.</span></h1>
+    <p>Buy, donate, or request useful stuff from students on your campus — simple, affordable, and actually student-friendly.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="listings.html">Explore Listings →</a>
+      <a class="btn ghost" href="create-listing.html">+ List an Item</a>
+    </div>
+    <div class="trust-row"><span>✓ Student-focused</span><span>✓ Affordable</span><span>✓ Sustainable</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="floating-tag">🔥 Popular today</div>
+    <div class="product-art drawing">📐</div>
+    <div class="mini-card">
+      <div><b>Engineering Drawing Kit</b><small>Good condition • CSE</small></div>
+      <strong>₹300</strong>
+    </div>
+    <div class="heart">♡</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong id="statListings">0</strong><span>Active listings</span></div>
+  <div><strong id="statRequests">0</strong><span>Open requests</span></div>
+  <div><strong>100%</strong><span>Student-focused</span></div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><span class="eyebrow">QUICK ACCESS</span><h2>What do you need?</h2></div></div>
+  <div class="quick-grid">
+    <a href="listings.html?type=SELL" class="quick"><span>🛍️</span><b>Buy something</b><small>Find affordable campus essentials</small></a>
+    <a href="create-listing.html" class="quick"><span>📦</span><b>Sell or donate</b><small>Give your unused stuff a new home</small></a>
+    <a href="requests.html" class="quick"><span>🔎</span><b>Help a student</b><small>See what other students need</small></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><span class="eyebrow">FRESH FINDS</span><h2>Recently listed</h2></div><a href="listings.html" class="text-link">View all →</a></div>
+  <div id="recentListings" class="listing-grid"></div>
+</section>
+</main>
+<footer><div><b>Campus Thrift</b><span>Part of CAMPUS+</span></div><span>Made for students, by students ✦</span></footer>
+<script src="js/app.js"></script><script src="js/home.js"></script>
+</body></html>
